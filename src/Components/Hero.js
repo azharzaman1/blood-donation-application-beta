@@ -1,17 +1,12 @@
 import React, { useState } from "react";
 import ForwardArrow from "./files/forward.png";
 import BackArrow from "./files/back.png";
-import BannerImg from "./files/banner.jpg";
 import { Button } from "@material-ui/core";
 import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({ type, slideImages, location, bannerImage }) => {
   const [slideIndex, setSlideIndex] = useState(0);
-  const [sliderImages, setSliderImages] = useState([
-    BannerImg,
-    ForwardArrow,
-    BackArrow,
-  ]);
+  const [sliderImages, setSliderImages] = useState(slideImages);
 
   const firstSlideIndex = 0;
   const lastSlideIndex = sliderImages.length - 1;
@@ -44,22 +39,25 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <div className="slider flexRow">
-        <Button
-          onClick={decrement}
-          className="slider__controller slider__controllerBack"
-        >
-          <img className="slider__arrows" src={BackArrow} alt="<" />
-        </Button>
-        <img className="slide" src={sliderImageSetter(sliderImages)} />
-        <Button
-          onClick={increment}
-          className="slider__controller slider__controllerForw"
-        >
-          <img className="slider__arrows" src={ForwardArrow} alt=">" />
-        </Button>
-      </div>
-      <div className="slider__fade"></div>
+      {type === "slider" ? (
+        <div className="slider flexRow">
+          <Button
+            onClick={decrement}
+            className="slider__controller slider__controllerBack"
+          >
+            <img className="slider__arrows" src={BackArrow} alt="<" />
+          </Button>
+          <img className="slide" src={sliderImageSetter(sliderImages)} />
+          <Button
+            onClick={increment}
+            className="slider__controller slider__controllerForw"
+          >
+            <img className="slider__arrows" src={ForwardArrow} alt=">" />
+          </Button>
+        </div>
+      ) : (
+        <>Other type</>
+      )}
     </div>
   );
 };

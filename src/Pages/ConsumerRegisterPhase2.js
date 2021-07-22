@@ -10,15 +10,14 @@ import "./Step2.css";
 import { Checkbox, FormControl, MenuItem, Select } from "@material-ui/core";
 import { useHistory, Redirect } from "react-router-dom";
 import { db } from "../Files/firebase";
-import { useStateValue } from "../Files/ContextProvider";
+// import { useStateValue } from "../Files/ContextProvider";
 
 const ContributorRegisterPhase2 = () => {
-  const [{ currentUser }, dispatch] = useStateValue();
+  // const [{ currentUser }, dispatch] = useStateValue();
   const [selectedDOB, setSelectedDOB] = useState(null);
   const [mySelfRecipient, setMySelfRecipient] = useState(true);
-  const [relationToRecipient, setRelationToRecipient] = useState(
-    "family-member"
-  );
+  const [relationToRecipient, setRelationToRecipient] =
+    useState("family-member");
   const [willToContribute, setWillToContribute] = useState(true);
   const [reasonForNotToDonate, setReasonForNotToDonate] = useState("select");
   const [sourceToKnow, setSourceToKnow] = useState("select");

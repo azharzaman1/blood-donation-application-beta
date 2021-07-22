@@ -2,10 +2,10 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
-import { useStateValue } from "../Files/ContextProvider";
+// import { useStateValue } from "../Files/ContextProvider";
 
 const Header = () => {
-  const [{ userState }, dispatch] = useStateValue();
+  // const [{ userState }, dispatch] = useStateValue();
 
   const registerAsContributorHandler = () => {
     localStorage.setItem("userRole", "CONTRIBUTOR");
@@ -17,7 +17,6 @@ const Header = () => {
 
   const registerAsConsumerHandler = () => {
     localStorage.setItem("userRole", "CONSUMER");
-
   };
 
   const signInAsConsumerHandler = () => {

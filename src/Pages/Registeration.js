@@ -5,10 +5,10 @@ import firebase from "firebase";
 import "./Registeration.css";
 import { auth, db } from "../Files/firebase";
 import { useHistory, Redirect } from "react-router-dom";
-import { useStateValue } from "../Files/ContextProvider";
+// import { useStateValue } from "../Files/ContextProvider";
 
 const Registeration = () => {
-  const [{ currentUser }] = useStateValue();
+  // const [{ currentUser }] = useStateValue();
   const [firstNameValue, setFirstNameValue] = useState("");
   const [lastNameValue, setLastNameValue] = useState("");
   const [emailValue, setEmailValue] = useState("");

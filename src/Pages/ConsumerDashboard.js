@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { useStateValue } from "../Files/ContextProvider";
+// import { useStateValue } from "../Files/ContextProvider";
 import { auth, db } from "../Files/firebase";
 
 const ConsumerProfilePage = () => {
-  const [{ userState, currentUser }, dispatch] = useStateValue();
+  // const [{ userState, currentUser }, dispatch] = useStateValue();
 
   const [userRole, setUserRole] = useState(localStorage.getItem("userRole"));
   const [userID, setUserID] = useState(localStorage.getItem("userID"));
