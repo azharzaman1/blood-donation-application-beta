@@ -1,0 +1,76 @@
+.emailVerify__notification {
+  width: 100%;
+  user-select: none;
+  align-items: center;
+}
+
+.emailVerify__notificationContent {
+  background-color: aliceblue;
+  margin: 0 auto;
+  width: 30%;
+  align-items: center;
+  margin-top: 5%;
+  padding: 1.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 3px;
+  box-shadow: 2.5px 2.5px 10px -1px rgba(0, 0, 0, 0.15),
+    -2.5px -2.5px 10px -1px rgba(0, 0, 0, 0.15);
+}
+
+.tagline1 {
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(194, 0, 0);
+  text-align: center;
+}
+
+.tagline2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(77, 77, 77);
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.email__servcies {
+  margin: 1.5rem 1rem 1rem;
+}
+
+.email__servcies > a {
+  margin: 0 0.75rem;
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  color: rgb(43, 43, 238);
+}
+
+.verifyBtn {
+  width: 10rem;
+  font-family: "Poppins", sans-serif;
+  height: 35px;
+  font-size: 14px;
+  border: 1px solid rgb(128, 125, 125);
+  margin: 0.75rem auto;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+  letter-spacing: 0.6px;
+}
+
+.verifyBtn:hover {
+  background-color: #8b4748;
+  color: white;
+}
+
+.resend__email {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(77, 77, 77);
+  margin-top: 0.5rem;
+}
+
+.resend__email > strong {
+  font-weight: 500;
+  color: rgb(69, 69, 245);
+  cursor: pointer;
+  margin-left: 0.5rem;
+}

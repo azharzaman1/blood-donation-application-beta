@@ -1,0 +1,127 @@
+.signIn__container {
+  width: 100%;
+  user-select: none;
+  align-items: center;
+}
+
+.signIn__form {
+  background-color: aliceblue;
+  margin: 0 auto;
+  width: 21.5%;
+  align-items: center;
+  margin-top: 5%;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 3px;
+  box-shadow: 2.5px 2.5px 10px -1px rgba(0, 0, 0, 0.15),
+    -2.5px -2.5px 10px -1px rgba(0, 0, 0, 0.15);
+}
+
+.formHeader > h4 {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(194, 0, 0);
+  text-align: center;
+}
+
+.form__status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.1rem;
+}
+
+.form__status > h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(77, 77, 77);
+  margin-right: 0.5rem;
+}
+
+.form__status > .formStatus__dropdown {
+  margin-left: 0.5rem;
+}
+
+.formStatus__dropdownSelect {
+  font-size: 13px !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropDown__item {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px !important;
+}
+
+/* Form Content ................................... */
+
+.signIn__formContent {
+  width: 100%;
+  margin: 3rem 0 2rem;
+  align-items: center;
+}
+
+.signIn__formInput {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1rem 2.2rem;
+}
+
+.signIn__formInput:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.signIn__formInput > label {
+  margin-bottom: 0.25rem;
+  font-size: 14px;
+}
+
+.signIn__formInput > label > strong {
+  color: red;
+}
+
+.signIn__formInput > input {
+  width: 85%;
+  height: 22px;
+  padding: 6px 6px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.signIn__formInput > input:focus {
+  background-color: #e7cccc;
+  outline-color: #8b4748;
+}
+
+.signIn__formInput > a {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-right: 2.5rem;
+  text-align: right;
+  color: #266cad;
+}
+
+.submit__btn {
+  width: 10rem;
+  font-family: "Poppins", sans-serif;
+  height: 35px;
+  font-size: 14px;
+  border: 1px solid rgb(128, 125, 125);
+  margin: 2rem auto 0;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+  letter-spacing: 0.6px;
+}
+
+.submit__btn:hover {
+  background-color: #8b4748;
+  color: white;
+}
+
+.back__to__home__link {
+  color: white;
+  font-size: 18px;
+  margin-left: 46.75%;
+}

@@ -1,0 +1,27 @@
+.hero {
+  max-width: 100%;
+}
+
+.slider {
+  max-width: 100%;
+  position: relative;
+}
+
+.slider > .slide {
+  width: 100%;
+  /* height: 80vh; */
+}
+
+.slider__controller {
+  position: absolute !important;
+  z-index: 11000;
+  top: 40%;
+}
+
+.slider__arrows {
+  width: 50px !important;
+}
+
+.slider__controllerForw {
+  right: 0;
+}
