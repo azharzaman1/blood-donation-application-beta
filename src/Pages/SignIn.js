@@ -49,8 +49,8 @@ const Registeration = () => {
     <div className="signIn__container">
       <form onSubmit={signinHandler} className="signIn__form flexColumn">
         <div className="formHeader">
-          <h4>Welcome Again</h4>
-          <div className="form__status">
+          <h4>Welcome Back</h4>
+          {/* <div className="form__status">
             <h3>Signing In as</h3>
             <FormControl required className="formStatus__dropdown">
               <Select
@@ -72,7 +72,7 @@ const Registeration = () => {
                 </MenuItem>
               </Select>
             </FormControl>
-          </div>
+          </div> */}
         </div>
         <div className="signIn__formContent flexColumn">
           <div className="signIn__formInput">
@@ -98,7 +98,7 @@ const Registeration = () => {
             />
             <Link onClick={passwordResetHandler} to="retrieve-password">
               {" "}
-              Forgot password{" "}
+              Forgot password?{" "}
             </Link>
           </div>
 

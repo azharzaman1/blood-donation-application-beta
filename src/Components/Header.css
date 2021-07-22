@@ -1,64 +1,68 @@
 .header {
   max-width: 100%;
   height: 100%;
-  background-color: #8b4748;
-  /* background-color: white; */
-  padding: 0.65rem;
-  border-bottom: 1px solid rgb(160, 99, 99);
-  box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.15);
-  z-index: 11111;
+  padding: 0.5rem 0.65rem;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.085);
 }
 
-.headerNav__left,
-.headerNav__right {
-  padding: 1rem;
+.logo {
+  width: 120px;
 }
 
-.headerNav__left {
-  width: 35%;
-  justify-content: flex-end;
+/* .headerLeft {
+  background-color: skyblue;
 }
 
-.headerNav__left > a {
-  margin-right: 1rem;
+.headerCenter {
+  background-color: lightgray;
 }
 
-.header__logo {
-  width: 125px;
-  padding: 0 1rem;
-}
-/* Illustration Designed By 爱画画的猫 From <a href="https://lovepik.com/image-450013211/world-blood-donor-day-web-banner.html">LovePik.com</a> */
+.headerRight {
+  background-color: orange;
+} */
 
-.headerNav__right {
-  width: 35%;
+.headerMenu_item {
+  padding: 0 10px;
 }
 
-.headerNav__right > a {
-  margin-left: 1rem;
+.headerRight_seperator {
+  padding: 0 3px;
+  color: rgb(160, 160, 160);
 }
 
-.headerNav__left > a > button,
-.headerNav__right > a > button {
-  text-transform: inherit;
-  border-radius: 2px;
-  /* color: #be1c1e; */
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
-  border: 1px solid #ccc;
-  transition: color 0.2s, background 0.2s;
+.example .hover {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.example .hover:before,
+.example .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 2.5px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.5s;
+  opacity: 0;
+  background-color: rgb(221, 10, 10);
 }
 
-.headerNav__left > a > button:hover,
-.headerNav__right > a > button:hover {
-  background-color: #820104;
-  color: white;
+.example .hover.hover-3:before {
+  left: 50%;
+}
+.example .hover.hover-3:after {
+  right: 50%;
 }
 
-.contributor__singin,
-.consumer__singin {
-  font-size: 15px;
-  /* color: #e40c0f; */
-  color: white;
-  width: 10%;
+.example:hover .hover:before,
+.example:hover .hover:after {
+  width: 100%;
+  opacity: 1;
+}
+.example:hover .hover.hover-3:before,
+.example:hover .hover.hover-4:before,
+.example:hover .hover.hover-3:after,
+.example:hover .hover.hover-4:after {
+  width: 50%;
 }

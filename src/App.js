@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignIn from "./Pages/SignIn";
 import "./App.css";
 import { auth } from "./Files/firebase";
+import Header from "./Components/Header";
 
 // import ContributorProfilePage from "./Pages/ContributorDashboard";
 // import ConsumerProfilePage from "./Pages/ConsumerDashboard";
@@ -18,11 +19,12 @@ const App = () => {
   return (
     <div className="app">
       <Router>
+        <Header />
         <Switch>
-          <Route path="/user_authentication">
+          <Route path="/authentication/login">
             <SignIn />
           </Route>
-          <Route path="/user_registration">
+          <Route path="/authentication/register">
             <Registeration />
           </Route>
           <Route exact path="/">
