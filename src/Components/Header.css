@@ -4,12 +4,17 @@
   padding: 0.5rem 0.65rem;
   border-bottom: 1px solid rgb(235, 235, 235);
   box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.085);
+<<<<<<< Updated upstream
+=======
+  background-color: white;
+>>>>>>> Stashed changes
 }
 
 .logo {
   width: 120px;
 }
 
+<<<<<<< Updated upstream
 /* .headerLeft {
   background-color: skyblue;
 }
@@ -51,6 +56,41 @@
 .example .hover.hover-3:before {
   left: 50%;
 }
+=======
+.headerMenu_item {
+  padding: 0 10px;
+}
+
+.headerRight_seperator {
+  padding: 0 3px;
+  color: rgb(160, 160, 160);
+}
+
+.icon1 {
+  padding: 0 7px;
+}
+
+.example .hover {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.example .hover:before,
+.example .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0px;
+  height: 2.5px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.5s;
+  opacity: 0;
+  background-color: #ff6363;
+}
+
+.example .hover.hover-3:before {
+  left: 50%;
+}
+>>>>>>> Stashed changes
 .example .hover.hover-3:after {
   right: 50%;
 }

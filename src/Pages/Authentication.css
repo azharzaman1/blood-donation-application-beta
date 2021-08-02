@@ -1,0 +1,44 @@
+.signupForm {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 2.5px 2.5px 10px -1px rgba(0, 0, 0, 0.08);
+  padding: 20px 25px;
+  margin-top: 50px;
+}
+
+/* .signupForm .MuiInputBase-input {
+  padding: 14px !important;
+} */
+
+.formHeader > div > h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.signupForm__input {
+  padding: 20px 0 0;
+}
+
+.signupForm__input > label {
+  margin-bottom: 7.5px;
+}
+
+.signupForm__input > label > strong {
+  color: red;
+}
+
+.signupForm__input > input {
+  padding: 10px;
+}
+
+.signupForm__input > h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+.submitButton {
+  text-transform: capitalize !important;
+}

@@ -1,11 +1,11 @@
-.signIn__container {
+/* .signIn__container {
   width: 100%;
   user-select: none;
   align-items: center;
 }
 
 .signIn__form {
-  background-color: aliceblue;
+  background-color: white;
   margin: 0 auto;
   width: 21.5%;
   align-items: center;
@@ -13,52 +13,19 @@
   padding: 1rem;
   margin-bottom: 0.75rem;
   border-radius: 3px;
-  box-shadow: 2.5px 2.5px 10px -1px rgba(0, 0, 0, 0.15),
-    -2.5px -2.5px 10px -1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .formHeader > h4 {
-  font-size: 17px;
+  font-size: 21px;
   font-weight: 500;
-  color: rgb(194, 0, 0);
+  color: rgb(37, 37, 37);
   text-align: center;
 }
 
-.form__status {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1.1rem;
-}
-
-.form__status > h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  color: rgb(77, 77, 77);
-  margin-right: 0.5rem;
-}
-
-.form__status > .formStatus__dropdown {
-  margin-left: 0.5rem;
-}
-
-.formStatus__dropdownSelect {
-  font-size: 13px !important;
-  font-family: "Poppins", sans-serif;
-}
-
-.dropDown__item {
-  font-family: "Poppins", sans-serif;
-  font-size: 13px !important;
-}
-
-/* Form Content ................................... */
-
 .signIn__formContent {
   width: 100%;
-  margin: 3rem 0 2rem;
+  margin: 1rem 0 1rem;
   align-items: center;
 }
 
@@ -66,7 +33,6 @@
   width: 100% !important;
   display: flex;
   flex-direction: column;
-  margin: 0 0 1rem 2.2rem;
 }
 
 .signIn__formInput:nth-child(2) {
@@ -85,7 +51,7 @@
 .signIn__formInput > input {
   width: 85%;
   height: 22px;
-  padding: 6px 6px;
+  padding: 10px 6px;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
@@ -124,4 +90,4 @@
   color: white;
   font-size: 18px;
   margin-left: 46.75%;
-}
+} */

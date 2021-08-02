@@ -5,16 +5,15 @@
 }
 
 .form {
-  width: 70%;
   background-color: aliceblue;
-  margin: 0 auto;
-  margin-top: 1.75rem;
-  margin-bottom: 1rem;
-  align-items: center;
-  padding: 1rem;
   border-radius: 3px;
   box-shadow: 2.5px 2.5px 10px -1px rgba(0, 0, 0, 0.15),
     -2.5px -2.5px 10px -1px rgba(0, 0, 0, 0.15);
+}
+
+/* 
+.signupPage__container {
+  background-color: red;
 }
 
 .formHeader > h4 {
@@ -128,4 +127,4 @@
   color: white;
   font-size: 18px;
   margin-left: 46.75%;
-}
+} */

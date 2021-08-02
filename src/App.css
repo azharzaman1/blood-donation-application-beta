@@ -4,6 +4,10 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+<<<<<<< Updated upstream
+=======
+  background-color: rgb(247, 239, 239);
+>>>>>>> Stashed changes
 }
 
 .link {
@@ -11,7 +15,15 @@ body {
   transition: color 0.4s;
 }
 .link:hover {
+<<<<<<< Updated upstream
   color: rgb(221, 10, 10);
+=======
+  color: #ff6363;
+}
+
+.link2 {
+  font-size: 15px;
+>>>>>>> Stashed changes
 }
 
 .link2:hover {
