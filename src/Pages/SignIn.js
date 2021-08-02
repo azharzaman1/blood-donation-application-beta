@@ -46,63 +46,6 @@ const Registeration = () => {
   };
 
   return (
-<<<<<<< Updated upstream
-    <div className="signIn__container">
-      <form onSubmit={signinHandler} className="signIn__form flexColumn">
-        <div className="formHeader">
-          <h4>Welcome Back</h4>
-          {/* <div className="form__status">
-            <h3>Signing In as</h3>
-            <FormControl required className="formStatus__dropdown">
-              <Select
-                onChange={onUserRoleSelect}
-                variant="outlined"
-                value={finalizedUserRole}
-                className="formStatus__dropdownSelect"
-              >
-                <MenuItem className="dropDown__item" value={userRole}>
-                  {userRole}
-                </MenuItem>
-                <MenuItem
-                  className="dropDown__item"
-                  value={
-                    userRole === "CONTRIBUTOR" ? "CONSUMER" : "CONTRIBUTOR"
-                  }
-                >
-                  {userRole === "CONTRIBUTOR" ? "CONSUMER" : "CONTRIBUTOR"}
-                </MenuItem>
-              </Select>
-            </FormControl>
-          </div> */}
-        </div>
-        <div className="signIn__formContent flexColumn">
-          <div className="signIn__formInput">
-            <label>
-              Your Email Address <strong>*</strong>
-            </label>
-            <input
-              value={emailValue}
-              onChange={(e) => setEmailValue(e.target.value)}
-              required
-              type="text"
-            />
-          </div>
-          <div className="signIn__formInput">
-            <label>
-              Your Password <strong>*</strong>
-            </label>
-            <input
-              value={passwordValue}
-              onChange={(e) => setPasswordValue(e.target.value)}
-              required
-              type="password"
-            />
-            <Link onClick={passwordResetHandler} to="retrieve-password">
-              {" "}
-              Forgot password?{" "}
-            </Link>
-          </div>
-=======
     <Grid container className="signIn__container">
       <Grid item xs="12">
         <form onSubmit={signinHandler} className="signIn__form flexColumn">
@@ -142,7 +85,6 @@ const Registeration = () => {
                   Forgot password?{" "}
                 </Link>
               </div>
->>>>>>> Stashed changes
 
               <input
                 disabled={disableSubmitBtn()}

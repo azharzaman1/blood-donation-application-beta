@@ -1,22 +1,12 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-<<<<<<< Updated upstream
-import { Button, IconButton } from "@material-ui/core";
-import { Grid } from "@material-ui/core";
-import { headerPrimaryMenu } from "../Files/menus";
-import { useEffect } from "react";
-import { Menu, MenuOutlined } from "@material-ui/icons";
-import { db } from "../Files/firebase";
-import { getFromLS } from "../Files/localStorageUtils";
-=======
 import { IconButton } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { useEffect } from "react";
 import { Menu, MenuOutlined, PersonOutlined } from "@material-ui/icons";
 import { db } from "../Files/firebase";
 import { headerPrimaryMenu } from "../Files/menus";
->>>>>>> Stashed changes
 
 const Header = ({ header, type }) => {
   const [mobileScreen, setMobileScreen] = useState(false);
@@ -39,17 +29,7 @@ const Header = ({ header, type }) => {
   x.addListener(myFunction);
 
   useEffect(() => {
-<<<<<<< Updated upstream
-    // First Checks Generic info is in localstorgae or not, if not then fetches from database
     const docRef = db.collection("ui_content").doc("generic");
-
-    // if (getFromLS("genricInfo")) {
-    //   console.log("Generic info already present in Local Stroage");
-    //   setGenericInfo(getFromLS("genricInfo"));
-    // } else {
-=======
-    const docRef = db.collection("ui_content").doc("generic");
->>>>>>> Stashed changes
     docRef
       .get()
       .then((fetchedDoc) => {
@@ -64,10 +44,6 @@ const Header = ({ header, type }) => {
       .catch((error) => {
         console.log("Caught Some Unknown Error:", error);
       });
-<<<<<<< Updated upstream
-    // }
-=======
->>>>>>> Stashed changes
   }, []);
 
   return (
@@ -80,11 +56,7 @@ const Header = ({ header, type }) => {
           direction="row"
           justifyContent="center"
         >
-<<<<<<< Updated upstream
-          <Grid className="headerLeft" item xs="3" lg="1">
-=======
           <Grid className="headerLeft" item xs="3" lg="2">
->>>>>>> Stashed changes
             <Link to="/">
               <img
                 className="logo"
@@ -125,12 +97,6 @@ const Header = ({ header, type }) => {
             item
             container
             xs="3"
-<<<<<<< Updated upstream
-            lg="1"
-            justifyContent="flex-end"
-            alignItems="center"
-          >
-=======
             lg="2"
             justifyContent="flex-end"
             alignItems="center"
@@ -140,7 +106,6 @@ const Header = ({ header, type }) => {
               color="primary"
               className="icon1 headerAccount_icon"
             />
->>>>>>> Stashed changes
             <Link className="link link2" to="/authentication/login">
               Login
             </Link>{" "}
