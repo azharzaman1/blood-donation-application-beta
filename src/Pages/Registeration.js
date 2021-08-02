@@ -5,10 +5,10 @@ import firebase from "firebase";
 import "./Registeration.css";
 import { auth, db } from "../Files/firebase";
 import { useHistory, Redirect } from "react-router-dom";
-import { useStateValue } from "../Files/ContextProvider";
+// import { useStateValue } from "../Files/ContextProvider";
 
 const Registeration = () => {
-  const [{ currentUser }] = useStateValue();
+  // const [{ currentUser }] = useStateValue();
   const [firstNameValue, setFirstNameValue] = useState("");
   const [lastNameValue, setLastNameValue] = useState("");
   const [emailValue, setEmailValue] = useState("");
@@ -97,7 +97,7 @@ const Registeration = () => {
       <form onSubmit={signupHandler} className="form flexColumn">
         <div className="formHeader">
           <h4>Welcome Here</h4>
-          <div className="form__status">
+          {/* <div className="form__status">
             <h3>Registring as</h3>
             <FormControl required className="formStatus__dropdown">
               <Select
@@ -119,7 +119,7 @@ const Registeration = () => {
                 </MenuItem>
               </Select>
             </FormControl>
-          </div>
+          </div> */}
         </div>
         <div className="form__content flexColumn">
           <div className="form__inputsRow flexRow">

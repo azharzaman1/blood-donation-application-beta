@@ -1,51 +1,45 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import HomePage from "./Pages/HomePage";
 import Registeration from "./Pages/Registeration";
-import ContributorProfilePage from "./Pages/ContributorDashboard";
-import ConsumerProfilePage from "./Pages/ConsumerDashboard";
-import ConsumerRegisterPhase2 from "./Pages/ConsumerRegisterPhase2";
-import ContributorRegisterPhase2 from "./Pages/ContributorRegisterPhase2";
-import RetrievePassword from "./Pages/RetrievePassword";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignIn from "./Pages/SignIn";
-import { useStateValue } from "./Files/ContextProvider";
+import "./App.css";
 import { auth } from "./Files/firebase";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useHistory,
-} from "react-router-dom";
-import EmailNotification from "./Pages/EmailNotification";
-import EmailVerficationNotif from "./Pages/EmailVerficationNotif";
+import Header from "./Components/Header";
+
+// import ContributorProfilePage from "./Pages/ContributorDashboard";
+// import ConsumerProfilePage from "./Pages/ConsumerDashboard";
+// import ConsumerRegisterPhase2 from "./Pages/ConsumerRegisterPhase2";
+// import ContributorRegisterPhase2 from "./Pages/ContributorRegisterPhase2";
+// import RetrievePassword from "./Pages/RetrievePassword";
+// import EmailNotification from "./Pages/EmailNotification";
+// import EmailVerficationNotif from "./Pages/EmailVerficationNotif";
 
 const App = () => {
-  const [{ userState, currentUser }, dispatch] = useStateValue();
-  let history = useHistory();
-  useEffect(() => {
-    auth.onAuthStateChanged((authUser) => {
-      if (authUser) {
-        dispatch({
-          type: "SET_USER",
-          user: authUser,
-        });
-        // localStorage.setItem("userID", authUser?.uid);
-      } else {
-        dispatch({
-          type: "SET_USER",
-          user: null,
-        });
-      }
-    });
-  }, []);
-
-  console.log(currentUser);
-
   return (
     <div className="app">
       <Router>
+        <Header />
         <Switch>
-          <Route path="/dashboard-consumer">
+          <Route path="/authentication/login">
+            <SignIn />
+          </Route>
+          <Route path="/authentication/register">
+            <Registeration />
+          </Route>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
+  );
+};
+
+export default App;
+
+{
+  /* <Route path="/dashboard-consumer">
             <ConsumerProfilePage />
           </Route>
           <Route path="/dashboard-contributor">
@@ -62,23 +56,26 @@ const App = () => {
           </Route>
           <Route path="/retrieve-password">
             <RetrievePassword />
-          </Route>
-          <Route path="/user_authentication">
-            <SignIn />
-          </Route>
-          <Route path="/email_verification">
+          </Route> */
+}
+{
+  /* <Route path="/email_verification">
             <EmailVerficationNotif />
-          </Route>
-          <Route path="/user_registration">
-            <Registeration />
-          </Route>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
-};
+          </Route> */
+}
 
-export default App;
+// useEffect(() => {
+//   auth.onAuthStateChanged((authUser) => {
+//     if (authUser) {
+//       dispatch({
+//         type: "SET_USER",
+//         user: authUser,
+//       });
+//     } else {
+//       dispatch({
+//         type: "SET_USER",
+//         user: null,
+//       });
+//     }
+//   });
+// }, []);
